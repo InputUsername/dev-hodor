@@ -1,6 +1,4 @@
 # /dev/hodor
-
-## About
 This is a device that behaves like Hodor.
 
 It answers to your calls with nothing but `Hodor`.
