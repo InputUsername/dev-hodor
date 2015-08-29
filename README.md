@@ -12,7 +12,7 @@ Has been tested on Ubuntu 14.04 and should work on Debian too.
 
 Largely based on http://www.linuxdevcenter.com/pub/a/linux/2007/07/05/devhelloworld-a-simple-introduction-to-device-drivers-under-linux.html.
 
-## How to build
+## How to build/use
 The module-assistant package for Debian installs packages and configures the system to build out-of-kernel modules. Install it with:
 ```
 $ sudo apt-get install module-assistant
@@ -24,3 +24,15 @@ That should be enough to build the module. Run
 $ make
 ```
 to build it.
+
+Then, to install the module, use:
+```
+$ sudo insmod ./hodor_dev.ko
+```
+
+Now you should be able to read from `/dev/hodor`. Note that this requires root.
+
+To uninstall the module again, use:
+```
+$ sudo rmmod hodor_dev
+```
