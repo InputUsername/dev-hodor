@@ -28,6 +28,9 @@ $ sudo insmod ./hodor_dev.ko
 ```
 
 Now you should be able to read from `/dev/hodor`. Note that this requires root.
+```
+$ cat /dev/hodor
+```
 
 To uninstall the module again, use:
 ```
