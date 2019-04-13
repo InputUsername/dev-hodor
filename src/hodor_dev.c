@@ -17,7 +17,7 @@ static ssize_t hodor_read(struct file * file, char * buf,
 	if (*ppos != 0)
 		return 0;
 	
-	if (copy_to_user(buf, hodor_str, len))
+	if (raw_copy_to_user(buf, hodor_str, len))
 		return -EINVAL;
 	
 	*ppos = len;
